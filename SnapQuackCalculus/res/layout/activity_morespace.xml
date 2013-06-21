@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical" >
+    
+    
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_weight="76"
+        android:gravity="center"
+        android:text="@string/input"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+        
+         <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="12" >
+
+        <Button android:background="@drawable/button_selector"
+            android:id="@+id/substitute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/SUBS"
+            android:textSize="15sp" 
+            android:onClick="substitute"/>
+
+        <Button android:background="@drawable/button_selector"
+            android:id="@+id/Derive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:onClick="derive"
+            android:text="@string/DERIVE"
+            android:textSize="15sp" />
+
+        <Button android:background="@drawable/button_selector"
+            android:id="@+id/Integrate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/Integrate"
+            android:textSize="15sp" 
+            android:onClick="integrate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="12" >
+
+        <Button android:background="@drawable/button_selector"
+            android:id="@+id/Simplify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:onClick="simplify"
+            android:text="@string/Simplify"
+            android:textSize="15sp" />
+
+         <Button android:background="@drawable/button_selector"
+            android:id="@+id/BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/BACK" 
+            android:onClick="mainPage"/>
+
+        <Button
+            android:id="@+id/Derive_and_Simplify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/button_selector"
+            android:onClick="derive_and_simplify"
+            android:text="@string/D_and_S"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>
